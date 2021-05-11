@@ -1,5 +1,5 @@
 import React from 'react';
-import Exemple from './Exemple.jpg';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   
 });
 
-export default function Activity( { title, image, description, price, duration, location, id } ) {
+export default function Activity({title, image_1, description, price, duration, location, id} ) {
   const classes = useStyles();
 
   return (
@@ -30,12 +30,12 @@ export default function Activity( { title, image, description, price, duration, 
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={image}
+          image={image_1}
           title={title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Title demo {title}
+             {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
             {description}
