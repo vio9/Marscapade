@@ -53,3 +53,16 @@
     gap: 20px;
     margin-top: 20px;
 }
+
+@media screen and (min-width: 280px) and (max-width: 767px) {
+    .mentions-generales {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .partenaires {
+        flex-direction: column;
+    }
+}
+
