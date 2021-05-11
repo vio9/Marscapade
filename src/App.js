@@ -7,16 +7,16 @@ import Welcome from "./components/Welcome";
 import Navbar from "./components/Navbar";
 
 function App() {
-  const { isSticky, element } = useSticky();
-  return (
-    <>
-      <Header />
-      <Navbar sticky={isSticky} />
-      <Welcome element={element} />
-      <BackTop />
-        <Footer/>
-    </>
-  );
+    const {isSticky, element} = useSticky();
+    return (
+        <>
+            <Header/>
+            <Navbar sticky={isSticky}/>
+            <Welcome element={element}/>
+            <BackTop/>
+            <Footer/>
+        </>
+    );
 }
 
 export default App;

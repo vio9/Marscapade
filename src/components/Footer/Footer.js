@@ -41,7 +41,7 @@ export const Footer = () => {
             </div>
 
             <div className="mentions-generales">
-                <em>Site réalisé la tête dans les étoiles par Pierre, Jérôme, Julien Nicolas, Pauline, Violaine et Aline</em>
+                Site réalisé la tête dans les étoiles par Pierre, Jérôme, Julien Nicolas, Pauline, Violaine et Aline
             </div>
 
         </div>
