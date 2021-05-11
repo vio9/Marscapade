@@ -27,7 +27,7 @@ export default function ActivityDetail(){
 
                 const getDetail = async () => {
                     try{
-                        const detailData = await axios.get('fakeurl')
+                        const detailData = await axios.get('http://localhost:8080/activities/id')
                         setDetail(detailData.data)
                     } catch(err) {
                         console.log(err)
