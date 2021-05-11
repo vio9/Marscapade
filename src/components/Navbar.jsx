@@ -1,11 +1,9 @@
 import React from "react"
 import "./Navbar.css"
-import Logo from "../logo.svg"
 
-const Navbar = ({ sticky }) => (
-    <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
+const Navbar = () => (
+    <nav className="navbar">
         <div className="navbar--logo-holder">
-            {sticky ? <img src={Logo} alt="logo" className="navbar--logo" /> : null}
             <h1>MarsCapade</h1>
         </div>
         <ul className="navbar--link">
