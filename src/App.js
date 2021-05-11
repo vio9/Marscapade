@@ -76,7 +76,6 @@ function App() {
             />
         </>
     );
->>>>>>> 972a8e92ceb6c449b16699d49f74e5f84809932b
 }
 
 export default App;
