@@ -54,13 +54,17 @@
             background-color: var(--red);
         }
     }
+
+    #form-name{
+        margin-right: 2rem;
+    }
     
     .preview-img, img{
         height: 2rem;
         width: 2rem;
     }
 
-    .img-row{
+    .div-row{
         display: flex;
         flex-direction: row;
         margin-right: 1rem;
@@ -79,7 +83,7 @@
         form{
             padding: 2rem ;
         }
-        .img-row{
+        .div-row{
             display: flex;
             flex-direction: column;
             margin: 0;

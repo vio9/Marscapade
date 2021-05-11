@@ -3,6 +3,7 @@ import "./Form.scss";
 
 export default function FormActivity() {
   const [name, setName] = useState("");
+  const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
   const [person, setPerson] = useState("");
   const [img1, setImg1] = useState("");
@@ -20,16 +21,29 @@ export default function FormActivity() {
       <form onSubmit={handleSubmit}>
         <h1>Create Activity</h1>
 
-        <label>
-          Name :
-          <input
-            name="name"
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            required
-          />
-        </label>
+        <div className="div-row">
+          <label id="form-name">
+            Name :
+            <input
+              name="name"
+              type="text"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              required
+            />
+          </label>
+
+          <label>
+            Price :
+            <input
+              name="price"
+              type="number"
+              value={price}
+              onChange={(e) => setPrice(e.target.value)}
+              required
+            />
+          </label>
+        </div>
 
         <label>
           Description :
@@ -55,7 +69,7 @@ export default function FormActivity() {
         </label>
         <label>
           Images URL :
-          <div className="img-row">
+          <div className="div-row">
             <div className="img-input">
               <input
                 name="img1"
@@ -81,7 +95,7 @@ export default function FormActivity() {
               </div>
             </div>
           </div>
-          <div className="img-row">
+          <div className="div-row">
             <div className="img-input">
               <input
                 name="img3"
