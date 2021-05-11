@@ -1,6 +1,12 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import Activity from './Activity';
 import {CircularProgress} from '@material-ui/core';
+
+
+
+
+
 
 export default function ActivityList(){
     
@@ -26,20 +32,39 @@ export default function ActivityList(){
         getActivityList()     
         
     }, [loading])
+
+    if(loading) return <CircularProgress />
+
+    return(
+        <>
+            <Activity />
+            <Activity />
+            <Activity />
+            <Activity />
+        </>
+    )
     
-    
-    
+    /*
     
     return(
-        {
-            activityList.map((act) => {
+        <>
+        {activityList.map((act) => {
                 return(
-                    <>
-                    
-                    </>
+                    <Wrapper>
+                        
+                    <Activity
+                    id={act.id}
+                    name={act.name}
+                    description={act.description} 
+                    price={act.price}
+                    location={act.location}
+                    nbpax={act.nbpax}
+                    />
+
+                    </Wrapper>
                 )
             })
         }
-       
-    )
-}
+      </> 
+    )*/
+} 
