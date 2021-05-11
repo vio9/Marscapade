@@ -62,19 +62,23 @@ export default function ActivityDetail(){
         </CardActionArea>
         <CardActions>
         <Typography variant="overline">
-           Prix : +++ euros{/*{price}*/}
+           Prix :{/*{price}*/} euros
            </Typography>
   
            <Typography variant="overline">
-           Durée : +++ {/*{detail.duration}*/}
+           Durée : {/*{detail.duration}*/}
            </Typography>
   
            <Typography variant="overline">
-           location: xxxxx{/*{location}*/}
+           location: {/*{location}*/}
            </Typography>
 
            <Typography variant="overline">
           Difficulté : {/*{difflevel}*/}
+           </Typography>
+
+           <Typography variant="overline">
+          Nombre de participants : {/*{nbpax}*/}
            </Typography>
 
           <Button size="small" color="primary">

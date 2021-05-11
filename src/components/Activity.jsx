@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   
 });
 
-export default function Activity() {
+export default function Activity(title, image, description, price, duration, location, id ) {
   const classes = useStyles();
 
   return (
@@ -30,32 +30,29 @@ export default function Activity() {
       <CardActionArea>
         <CardMedia
           className={classes.media}
-          image={Exemple}
-          title="Contemplative Reptile"
+          image={image}
+          title={title}
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            Title demo {/*(name}*/}
+            Title demo {title}
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            LLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-             industry's standard dummy text ever since th
-            e 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
-            pecimen book. It{/*(description}*/}
+            {description}
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
       <Typography variant="overline">
-         Prix : +++ euros{/*{price}*/}
+         Prix : {price} euros
          </Typography>
 
          <Typography variant="overline">
-         Durée : +++ {/*{duration}*/}
+         Durée : {duration}
          </Typography>
 
          <Typography variant="overline">
-         location: xxxxx{/*{location}*/}
+         location: {location}
          </Typography>
 
         <Button size="small" color="primary">
@@ -68,16 +65,3 @@ export default function Activity() {
 
 
 
-
-
-/*
-        <>
-        <h1>(name}</h1>
-        <p>{description}</p>
-        <div>{price}</div>
-        <p>{location}</p>
-         <div>{nbpax}</div>   
-        </>
-    )
-}
-*/

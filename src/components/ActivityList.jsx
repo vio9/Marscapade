@@ -20,8 +20,9 @@ export default function ActivityList(){
     useEffect(() => {
         const getActivityList = async () => {
             try{
-                const activityList = await axios.get('fakeurl')
-                setActivityList(activityList.data.results)
+                const response = await axios.get('http://localhost:8080/activities')
+                console.log('response', response)
+                setActivityList(response.data)
             } catch(err) {
                 console.log(err)
             } finally {
@@ -33,38 +34,29 @@ export default function ActivityList(){
         
     }, [loading])
 
+    console.log('activities', activityList)
     if(loading) return <CircularProgress />
-
-    return(
-        <>
-            <Activity />
-            <Activity />
-            <Activity />
-            <Activity />
-        </>
-    )
-    
-    /*
     
     return(
         <>
-        {activityList.map((act) => {
-                return(
-                    <Wrapper>
-                        
+        { 
+        activityList && activityList.length > 0 && (
+        activityList.map((act) => {
+                return(   
                     <Activity
                     id={act.id}
-                    name={act.name}
+                    title={act.title}
                     description={act.description} 
-                    price={act.price}
+                    price={'10euros'}
                     location={act.location}
                     nbpax={act.nbpax}
                     />
 
-                    </Wrapper>
+                    
                 )
             })
+        )
         }
       </> 
-    )*/
+    )
 } 
