@@ -1,13 +1,13 @@
 .back-to-top {
-  // display: flex;
-  align-items: flex-end;
+  display: flex;
+  align-items: center;
   justify-content: center;
   position: fixed;
   font-family: 'Old Standard TT', serif;
   height: 5vh;
   width: 5vh;
   bottom: 10vh;
-  left: 1rem;
+  left: 1vh;
   border-radius: 50%;
   scroll-behavior: smooth;
   color: white;
