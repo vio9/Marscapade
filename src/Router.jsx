@@ -18,6 +18,7 @@ export default function OtterRouter () {
                 <Route path="/circuits" component={Circuits}/>
                 <Route exact path="/" render={(props) => <Welcome {...props} element={element}/> }/>
             </Switch>
+            <Circuits/>
         </Router>
     )
 }

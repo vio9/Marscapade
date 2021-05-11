@@ -1,7 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import Logo from "../logo.svg";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ sticky }) => (
     <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>

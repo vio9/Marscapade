@@ -9,7 +9,7 @@ export default function CardCircuit ({id, circuitName, picture, distance, durati
                 <p className="infosCircuit"><i class="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> Distance : {distance}</p>
                 <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Duration : {duration}</p>
                 <p className="infosCircuit"><i class="fas fa-rocket" style={{color:"#bd4f35"}}></i> Difficulty level : {difflevel}</p>
-                {/*<Link to={`/circuits/${id}`}>Voir plus</Link>*/}
+                <Link to={`/circuits/${id}`} className="seeMoreCircuit">Voir plus</Link>
         </div>
     )
 }
