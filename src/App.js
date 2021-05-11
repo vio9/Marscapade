@@ -1,3 +1,4 @@
+import OtterRouter from "./Router";
 import Header from "./components/Header";
 import {Footer} from "./components/Footer/Footer";
 import BackTop from "./components/BackTop";
@@ -52,15 +53,13 @@ const steps = [
 ];
 
 function App() {
+
     const [isTourOpen, setIsTourOpen] = useState(true);
 
     return (
         <>
-            <Header/>
-            <Navbar />
-            <Welcome />
+            <OtterRouter/>
             <BackTop/>
-            <Footer/>
             <Tour
                 steps={steps}
                 isOpen={isTourOpen}
