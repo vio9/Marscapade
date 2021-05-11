@@ -12,6 +12,8 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: "50%",
+    marginBottom: 30,
+    marginLeft:10,
   },
   media: {
     height: 200,
@@ -44,15 +46,15 @@ export default function Activity() {
         </CardContent>
       </CardActionArea>
       <CardActions>
-      <Typography>
+      <Typography variant="overline">
          Prix : +++ euros{/*{price}*/}
          </Typography>
 
-         <Typography>
+         <Typography variant="overline">
          Durée : +++ {/*{duration}*/}
          </Typography>
 
-         <Typography>
+         <Typography variant="overline">
          location: xxxxx{/*{location}*/}
          </Typography>
 
