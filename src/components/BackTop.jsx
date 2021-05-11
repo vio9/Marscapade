@@ -9,23 +9,21 @@ export default function BackTop() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 0) {
-      setShowScroll(true);
-    } else if (showScroll && window.pageYOffset <= 400) {
-      setShowScroll(false);
-    }
-  };
+  // const checkScrollTop = () => {
+  //   if (!showScroll && window.pageYOffset > 0) {
+  //     setShowScroll(true);
+  //   } else if (showScroll && window.pageYOffset <= 400) {
+  //     setShowScroll(false);
+  //   }
+  // };
 
-  window.addEventListener("scroll", checkScrollTop);
+  // window.addEventListener("scroll", checkScrollTop);
 
   return (
     <>
-      {window.pageYOffset > 0 && (
-        <a href={scrollTop} className="back-to-top">
-          <KeyboardArrowUpIcon style={{ fontSize: 50 }} />
-        </a>
-      )}
+      <div onClick={scrollTop} className="back-to-top">
+        <KeyboardArrowUpIcon style={{ fontSize: 50 }} />
+      </div>
     </>
   );
 }

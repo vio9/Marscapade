@@ -10,9 +10,9 @@ function App() {
   return (
     <>
       <Header />
-      <BackTop />
       <Navbar sticky={isSticky} />
       <Welcome element={element} />
+      <BackTop />
     </>
   );
 }
