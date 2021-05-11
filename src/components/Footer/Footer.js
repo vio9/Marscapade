@@ -26,6 +26,7 @@ export const Footer = () => {
                     logo={marscapadelogo}
                     width={110}
                     height={110}
+
                 />
 
 
@@ -35,8 +36,6 @@ export const Footer = () => {
                     logo={nasalogo}
                     width={133}
                     height={110}
-
-
                 />
 
             </div>
