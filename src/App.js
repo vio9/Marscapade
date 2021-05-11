@@ -3,7 +3,6 @@ import Header from "./components/Header";
 import {Footer} from "./components/Footer/Footer";
 import BackTop from "./components/BackTop";
 import "./App.css";
-import useSticky from "./components/hooks/useSticky";
 import Welcome from "./components/Welcome";
 import Navbar from "./components/Navbar";
 import React, {useState} from 'react'
@@ -54,7 +53,7 @@ const steps = [
 ];
 
 function App() {
-  /*  const {isSticky, element} = useSticky(); */
+
     const [isTourOpen, setIsTourOpen] = useState(true);
 
     return (

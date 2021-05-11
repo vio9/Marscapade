@@ -12,14 +12,3 @@
     color: #e79545;
     font-family: 'Orbitron', sans-serif;
 }
-
-.welcome__cta-primary {
-    background: #bd4f35;
-    color: #fff;
-    margin-top: 1rem;
-    padding: 0.7rem 1.5rem;
-    border: none;
-    border-radius: 20px;
-    font-weight: 700;
-    font-family: 'Orbitron', sans-serif;
-}
