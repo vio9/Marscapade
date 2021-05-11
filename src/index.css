@@ -1,6 +1,17 @@
+html {
+  --dark: #332d3e;
+  --soft: #7d748f;
+  --brown: #6b4035;
+  --red: #bd4f35;
+  --orange: #e79545;
+  --yellow: #e7bf7a;
+}
+
 body {
+  font-size: 62.5%;
   margin: 0;
   font-family: "Old Standard TT", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
