@@ -34,11 +34,11 @@ export default function ActivityList(){
         
     }, [loading])
 
-    console.log('activities', activityList)
     if(loading) return <CircularProgress />
     
     return(
         <>
+        <h1>Activités</h1>
         { 
         activityList && activityList.length > 0 && (
         activityList.map((act) => {
