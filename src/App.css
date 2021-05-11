@@ -36,3 +36,70 @@
     transform: rotate(360deg);
   }
 }
+
+.tour-button {
+  white-space: nowrap;
+  font-size: 0.75rem !important;
+}
+
+.homeTour {
+  display: flex;
+  justify-content: center;
+}
+
+.homeTour-image {
+  width: 80px;
+}
+
+.homeTour-title {
+  font-weight: bold;
+  font-size: 0.80rem;
+}
+
+.homeTour-content p {
+  color: #6b4035;
+}
+
+.circuitTour {
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+
+.circuitTour-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.circuitTour-content p{
+  color: #6b4035;
+}
+
+.circuitTour-image {
+  flex-direction: column;
+  width: 50px;
+}
+
+.circuitTour-title {
+  font-weight: bold;
+  font-size: 0.80rem;
+}
+
+.activitiesTour {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.activitiesTour-image {
+  width: 80px;
+}
+
+.activities-content p{
+  color: #6b4035;
+}
+
+.activitiesTour-title {
+  font-weight: bold;
+  font-size: 0.80rem;
+}
