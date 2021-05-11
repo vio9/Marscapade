@@ -16,7 +16,8 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid;
+    border: solid 1px;
+    position: relative;
 }
 
 .pictureCircuit {

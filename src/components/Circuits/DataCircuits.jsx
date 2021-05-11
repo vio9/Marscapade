@@ -4,15 +4,15 @@ const dataCircuits = [
     {
       circuitName:"Mont Olympe",
       picture:essaiPicture,
-      description:"blabla",
+      description:"blabladescription",
       distance:"blabla",
       duration:"blabla",
-      difflevel:"difficile"   
+      difflevel:"blabla"   
     },
     {
         circuitName:"Mont Elysium",
         picture:essaiPicture,
-        description:"blabla",
+        description:"blabladescription",
         distance:"blabla",
         duration:"blabla",
         difflevel:"blabla"   
@@ -20,7 +20,7 @@ const dataCircuits = [
       {
         circuitName:"Noctis Labyrinthus",
         picture:essaiPicture,
-        description:"blabla",
+        description:"blabladescription",
         distance:"blabla",
         duration:"blabla",
         difflevel:"blabla"   
@@ -28,7 +28,7 @@ const dataCircuits = [
       {
         circuitName:"Mawrth Vallis",
         picture:essaiPicture,
-        description:"blabla",
+        description:"blabladescription",
         distance:"blabla",
         duration:"blabla",
         difflevel:"blabla"   
@@ -36,7 +36,7 @@ const dataCircuits = [
       {
         circuitName:"Dune Fantômes",
         picture:essaiPicture,
-        description:"blabla",
+        description:"blabladescription",
         distance:"blabla",
         duration:"blabla",
         difflevel:"blabla"   

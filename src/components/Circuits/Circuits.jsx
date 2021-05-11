@@ -1,7 +1,7 @@
 import React from "react";
 import dataCircuits from "./DataCircuits";
 import CardCircuit from "./CardCircuit";
-import "./Circuits.css";
+import "./Circuits.scss";
 
 export default function Circuits () {
     return (
