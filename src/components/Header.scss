@@ -36,4 +36,39 @@
     margin: 0 30rem 0 0 ;
     background-color: white;
   }
+}
+
+@media screen and (max-width: 439.95px) {
+    .header {
+      display: none;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 719.95px) {
+  .header {
+    display: none;
   }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079.95px) {
+  .header {
+    background-size: 100% 100%;
+  }
+  
+  #title1, #title2 {
+    font-size: 5rem;
+  }
+
+  .separator{
+    width: 15rem;
+    height: .3rem;
+    margin: 0 15rem 0 0 ;
+    background-color: white;
+  }
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1199.95px) {
+  #title1, #title2 {
+    font-size: 9rem;
+  }
+}
