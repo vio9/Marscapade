@@ -1,0 +1,36 @@
+.welcome {
+    background-color: #332d3e;
+    background-attachment: fixed;
+    background-size: cover;
+    line-height: 1.8;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #e79545;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.welcome--logo {
+    width: 10rem;
+}
+
+.welcome--about {
+    padding: 2rem;
+    width: 50rem;
+    color: #e79545;
+    text-align: justify;
+    margin: auto;
+}
+
+.welcome__cta-primary {
+    background: #bd4f35;
+    color: #fff;
+    margin-top: 1rem;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 20px;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+}
