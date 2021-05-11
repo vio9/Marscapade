@@ -8,7 +8,7 @@ function App() {
   const { isSticky, element } = useSticky()
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <Navbar sticky={isSticky} />
       <Welcome element={element} />
     </>
