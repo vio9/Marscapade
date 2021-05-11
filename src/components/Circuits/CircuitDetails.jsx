@@ -23,6 +23,10 @@ export default function CircuitDetails () {
         }
         getCircuitsDetails()
     }, [id])
+
+    console.log("circuitDetail", circuitDetails)
+    
+    if(loading) return <div>Loading...</div>
     
     return (
         <div className="cardCircuit">

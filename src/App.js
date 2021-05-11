@@ -54,17 +54,13 @@ const steps = [
 ];
 
 function App() {
-    const {isSticky, element} = useSticky();
+  /*  const {isSticky, element} = useSticky(); */
     const [isTourOpen, setIsTourOpen] = useState(true);
 
     return (
         <>
             <OtterRouter/>
-            <Header/>
-            <Navbar sticky={isSticky}/>
-            <Welcome element={element}/>
             <BackTop/>
-            <Footer/>
             <Tour
                 steps={steps}
                 isOpen={isTourOpen}

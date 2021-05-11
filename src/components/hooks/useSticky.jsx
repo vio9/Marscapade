@@ -1,4 +1,4 @@
-import { useEffect, useState, useRef } from "react"
+{/*import { useEffect, useState, useRef } from "react"
 
 function useSticky() {
     const [isSticky, setSticky] = useState(false)
@@ -37,4 +37,4 @@ function useSticky() {
     return { isSticky, element }
 }
 
-export default useSticky
+export default useSticky*/}
