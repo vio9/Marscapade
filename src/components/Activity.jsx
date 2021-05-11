@@ -22,7 +22,7 @@ const useStyles = makeStyles({
   
 });
 
-export default function Activity(title, image, description, price, duration, location, id ) {
+export default function Activity( { title, image, description, price, duration, location, id } ) {
   const classes = useStyles();
 
   return (
