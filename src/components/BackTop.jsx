@@ -3,7 +3,7 @@ import "./BackTop.scss";
 import KeyboardArrowUpIcon from "@material-ui/icons/KeyboardArrowUp";
 
 export default function BackTop() {
-  const [showScroll, setShowScroll] = useState(false);
+  // const [showScroll, setShowScroll] = useState(false);
 
   const scrollTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
