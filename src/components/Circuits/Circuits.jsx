@@ -5,13 +5,15 @@ import "./Circuits.scss";
 
 export default function Circuits () {
     return (
-        <>
-        <h1 className="title">LES CIRCUITS</h1>
-        <div className="cardCircuitContainer">
-            {dataCircuits.map((circuit) =>(
-                <CardCircuit {... circuit}/>
-            ))}
+        <div className="allCircuitsElements">
+            <div className="titleContainer">
+                <h1>LES CIRCUITS</h1>
+            </div>
+            <div className="cardCircuitsContainer">
+                {dataCircuits.map((circuit) =>(
+                    <CardCircuit {... circuit}/>
+                ))}
+            </div>
         </div>
-        </>
     )
 }

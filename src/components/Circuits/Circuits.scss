@@ -1,8 +1,16 @@
-.title {
-    font-size: 3rem;
+.allCircuitsElements {
+    background-color: #332d3e;
 }
 
-.cardCircuitContainer {
+.titleContainer {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
+    color: #e79545;
+}
+
+.cardCircuitsContainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -10,22 +18,22 @@
 
 .cardCircuit {
     margin: 1%;
-    padding: 1%;
+    padding-bottom: 1%;
     width: 25%;
     height: 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid 1px;
-    position: relative;
+    background-color: #e7bf7a;
 }
 
 .pictureCircuit {
-    width: 80%;
+    width: 100%;
 }
 
 .titleCircuit {
     font-size: 2rem;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .infosCircuit {

@@ -1,14 +1,13 @@
-import Header from "./components/Header";
-import Circuits from "./components/Circuits/Circuits";
-import "./App.css";
+import "./App.css"
+import OtterRouter from "./Router"
 
 function App() {
+  
   return (
-    <div className="App">
-      <Header />
-      <Circuits/>
-    </div>
-  );
+    <>
+      <OtterRouter/>
+    </>
+  )
 }
 
-export default App;
+export default App
