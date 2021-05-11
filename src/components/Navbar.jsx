@@ -7,7 +7,7 @@ const Navbar = ({ sticky }) => (
     <nav className={sticky ? "navbar navbar-sticky" : "navbar"}>
         <div className="navbar--logo-holder">
             {sticky ? <img src={Logo} alt="logo" className="navbar--logo" /> : null}
-            <h1> MarsCapade</h1>
+            <h1>MarsCapade</h1>
         </div>
         <ul className="navbar--link">
             <li className="navbar--link-item"><Link to="/">Home</Link></li>

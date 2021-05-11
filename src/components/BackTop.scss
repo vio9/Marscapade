@@ -1,0 +1,24 @@
+.back-to-top {
+  // display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: fixed;
+  font-family: 'Old Standard TT', serif;
+  height: 5vh;
+  width: 5vh;
+  bottom: 10vh;
+  left: 1rem;
+  border-radius: 50%;
+  scroll-behavior: smooth;
+  color: white;
+  background-color: var(--brown);
+  opacity: 50%;
+  margin: auto 0;
+  cursor: pointer;
+  transition: .2s transform, .2s .1s opacity;
+
+  &:hover{
+    transform: scale(1.2);
+    opacity: 80%;
+  }
+}
