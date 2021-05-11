@@ -45,17 +45,19 @@ export default function FormActivity() {
         <label>
           Images URL :
           <div className="img-row">
-            <input
-              name="img1"
-              type="url"
-              value={img1}
-              onChange={(e) => setImg1(e.target.value)}
-            />
-            {
-              <div className="preview-img">
-                {img1 && <img src={img1} alt="image 1" />}
-              </div>
-            }
+            <div className="img-input">
+              <input
+                name="img1"
+                type="url"
+                value={img1}
+                onChange={(e) => setImg1(e.target.value)}
+              />
+              {
+                <div className="preview-img">
+                  {img1 && <img src={img1} alt="preview" />}
+                </div>
+              }
+            </div>
             <input
               name="img2"
               type="url"
@@ -63,7 +65,7 @@ export default function FormActivity() {
               onChange={(e) => setImg2(e.target.value)}
             />
             <div className="preview-img">
-              {img2 && <img src={img2} alt="image 2" />}
+              {img2 && <img src={img2} alt="preview" />}
             </div>
           </div>
           <div className="img-row">
@@ -74,7 +76,7 @@ export default function FormActivity() {
               onChange={(e) => setImg3(e.target.value)}
             />
             <div className="preview-img">
-              {img3 && <img src={img3} alt="image 3" />}
+              {img3 && <img src={img3} alt="preview" />}
             </div>
             <input
               name="img4"
@@ -83,7 +85,7 @@ export default function FormActivity() {
               onChange={(e) => setImg4(e.target.value)}
             />
             <div className="preview-img">
-              {img4 && <img src={img4} alt="image 4" />}
+              {img4 && <img src={img4} alt="preview" />}
             </div>
           </div>
         </label>
