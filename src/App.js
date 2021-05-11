@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import {Footer} from "./components/Footer/Footer";
 import BackTop from "./components/BackTop";
 import "./App.css";
 import useSticky from "./components/hooks/useSticky";
@@ -13,6 +14,7 @@ function App() {
       <Navbar sticky={isSticky} />
       <Welcome element={element} />
       <BackTop />
+        <Footer/>
     </>
   );
 }
