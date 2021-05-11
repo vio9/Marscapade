@@ -65,3 +65,23 @@
         transform: rotateY(0rem);
     }
 }
+
+@media screen and (max-width: 439.95px) {
+    .navbar{
+        flex-flow: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 719.95px) {
+    .navbar{
+        flex-flow: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079.95px) {
+    .navbar--logo-holder {
+        padding-left: 1rem;
+    }
+}

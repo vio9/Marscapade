@@ -12,7 +12,6 @@ const Navbar = ({ sticky }) => (
             <li className="navbar--link-item">Home</li>
             <li className="navbar--link-item">Circuits</li>
             <li className="navbar--link-item">Activities</li>
-            <li className="navbar--link-item">Contact</li>
         </ul>
     </nav>
 )
