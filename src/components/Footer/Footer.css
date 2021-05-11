@@ -1,0 +1,52 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #332d3e;
+}
+
+.separateur {
+    border-top: solid 1px;
+    border-color: #e79545;
+    width: 70vw;
+}
+
+.coordonnees {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.coordonnees p {
+    font-weight: bold;
+}
+
+.email-projet {
+    cursor: pointer;
+
+}
+
+.logo-github {
+    width: 30px;
+    margin-top: 20px;
+}
+
+.mentions-generales {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
+}
+
+.email-la-loutre {
+    color: white;
+}
+
+.partenaires {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
