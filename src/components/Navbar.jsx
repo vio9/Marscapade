@@ -9,9 +9,9 @@ const Navbar = ({ sticky }) => (
             <h1>MarsCapade</h1>
         </div>
         <ul className="navbar--link">
-            <li className="navbar--link-item">Home</li>
-            <li className="navbar--link-item">Circuits</li>
-            <li className="navbar--link-item">Activities</li>
+            <li id='home' className="navbar--link-item">Home</li>
+            <li id='circuits' className="navbar--link-item">Circuits</li>
+            <li id='activities' className="navbar--link-item">Activities</li>
             <li className="navbar--link-item">Contact</li>
         </ul>
     </nav>
