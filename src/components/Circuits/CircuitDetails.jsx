@@ -30,7 +30,7 @@ export default function CircuitDetails () {
     
     return (
         <div className="cardCircuit">
-                <Link className="link" to="/">Back to home</Link>
+                <Link className="link" to="/circuits">Back to Circuits</Link>
                 <img className="pictureCircuit" src={circuitDetails.image_1} alt={circuitDetails.title}/>
                 <h2 className="titleCircuit">{circuitDetails.title}</h2>
                 <p className="infosCircuit">{circuitDetails.description}</p>
