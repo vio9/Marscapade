@@ -11,6 +11,7 @@ export default function Music() {
           position: "absolute",
           right: "40%",
           margin: "0",
+          color: "white",
         }}
       >
         <audio
