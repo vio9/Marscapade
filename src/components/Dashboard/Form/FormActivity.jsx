@@ -17,20 +17,20 @@ export default function FormActivity() {
     e.preventDefault();
     console.log("activity");
     const postActivity = async () => {
-      try {
-        const response = await axios.post("http://localhost:8081/activities", {
-          name: name,
-          description: description,
-          nbpax: person,
-          location: location,
-          image_1: img1,
-          image_2: img2,
-          image_3: img3,
-          image_4: img4,
-          price: price,
-        });
-      } catch (err) {
-        console.log(err);
+      try{
+          const response = await axios.post('http://localhost:8081/activities', {
+            name: name,
+            description: description,
+            nbpax: person,
+            location: location,
+            image_1: img1,
+            image_2: img2,
+            image_3: img3,
+            image_4: img4,
+            price: price
+          })
+      } catch(err) {
+          console.log(err)
       }
     };
     postActivity();
