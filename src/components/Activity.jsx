@@ -27,13 +27,13 @@ const useStyles = makeStyles({
   
 });*/
 
-export default function Activity({title, image_1, description, price, duration, location, id} ) {
+export default function Activity({name, image_1, description, price, duration, location, id} ) {
 
 
   return (
     <div className="cardCircuit">
-                <img className="pictureCircuit" src={image_1} alt={title}/>
-                <h2 className="titleCircuit">{title}</h2>
+                <img className="pictureCircuit" src={image_1} alt={name}/>
+                <h2 className="titleCircuit">{name}</h2>
                 <p className="infosCircuit"><i class="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> price : {price}</p>
                 <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Description : {description}</p>
                 <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i>duration : {duration}</p>
@@ -65,13 +65,7 @@ export default function Activity({title, image_1, description, price, duration, 
       <CardActions>
       <Typography variant="overline">
          Prix : {price} euros
-         </Typography>
-
-         <Typography variant="overline">
-         Durée : {duration}
-         </Typography>
-
-         <Typography variant="overline">
+         </Typography>titleline">
          location: {location}
          </Typography>
 

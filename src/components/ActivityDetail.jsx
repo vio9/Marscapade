@@ -62,7 +62,7 @@ export default function ActivityDetail(){
           <CardMedia
             className={classes.media}
             image={detail.image_1}
-            title={detail.title}
+            name={detail.name}
           />
 
           <CardContent>
