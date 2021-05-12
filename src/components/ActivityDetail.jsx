@@ -14,12 +14,15 @@ import Typography from '@material-ui/core/Typography';
 const useStyles = makeStyles({
   root: {
     maxWidth: "60%",
+    paddingTop:30,
   },
   media: {
-    height: 500,
+    height: 800,
   },
 global: {
   backgroundColor:'#332d3e',
+  display:'flex',
+  justifyContent:'center',
  
 
 }
@@ -67,7 +70,7 @@ export default function ActivityDetail(){
 
           <CardContent>
             <Typography variant="h5" component="h2">
-             {detail.title}
+             {detail.name}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
               {detail.description}
@@ -95,9 +98,6 @@ export default function ActivityDetail(){
           Nombre de participants : {detail.nbpax}
            </Typography>
 
-          <Button size="small" color="primary">
-            Share ! 
-          </Button>
         </CardActions>
       </Card>
       </div>
