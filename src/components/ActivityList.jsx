@@ -2,14 +2,11 @@ import {useState, useEffect} from 'react';
 import axios from 'axios';
 import Activity from './Activity';
 import {CircularProgress} from '@material-ui/core';
-
-
-
-
+import './Circuits/Circuits.scss';
 
 
 export default function ActivityList(){
-    
+   
     
     const [activityList, setActivityList] = useState([])
     const [loading, setLoading] = useState(true)
@@ -37,8 +34,10 @@ export default function ActivityList(){
     if(loading) return <CircularProgress />
     
     return(
-        <>
-        <h1>Activités</h1>
+        <div className="allCircuitsElements">
+            <div className="titleContainer">
+        <h1>LES ACTIVITES</h1></div>
+        <div className="cardCircuitsContainer">
         { 
         activityList && activityList.length > 0 && (
         activityList.map((act) => {
@@ -58,6 +57,8 @@ export default function ActivityList(){
             })
         )
         }
-      </> 
+        </div>
+        </div>
+      
     )
 } 

@@ -13,14 +13,16 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: "50%",
-    marginBottom: 30,
-    marginLeft:10,
+    maxWidth: "60%",
   },
   media: {
-    height: 200,
+    height: 500,
   },
+global: {
+  backgroundColor:'#332d3e',
+ 
 
+}
   
 });
 
@@ -53,7 +55,8 @@ export default function ActivityDetail(){
             if(loading) return <div>loading...</div>
 
     return(
-       <>
+      <div className={classes.global}>
+       
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
@@ -63,7 +66,7 @@ export default function ActivityDetail(){
           />
 
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
+            <Typography variant="h5" component="h2">
              {detail.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
@@ -97,8 +100,7 @@ export default function ActivityDetail(){
           </Button>
         </CardActions>
       </Card>
-      
-</>
+      </div>
 
 
     )
