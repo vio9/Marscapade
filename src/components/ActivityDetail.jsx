@@ -13,20 +13,36 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles({
   root: {
-    maxWidth: "60%",
-    paddingTop:30,
+    maxWidth: "90%",
+    padding:10,
   },
   media: {
     height: 800,
   },
 global: {
   backgroundColor:'#332d3e',
-  display:'flex',
-  justifyContent:'center',
- 
+  display:"flex",
+  justifyContent:"center",
 
-}
+},
+okey: {
+  padding:20,
+  margin:10,
+  display:"flex",
+  justifyContent:"center",
   
+},
+  
+img: {
+  height:200,
+  width:"70%",
+  '&:hover': {
+   filter:"saturate(200%)",
+   transition:"0.4s",
+   transform: "scale(1.2)",
+ },
+},
+
 });
 
 
@@ -65,7 +81,7 @@ export default function ActivityDetail(){
           <CardMedia
             className={classes.media}
             image={detail.image_1}
-            name={detail.name}
+           name={detail.name}
           />
 
           <CardContent>
@@ -98,7 +114,30 @@ export default function ActivityDetail(){
           Nombre de participants : {detail.nbpax}
            </Typography>
 
+          <Button size="small" color="primary">
+            Share ! 
+          </Button>
         </CardActions>
+        
+         <div className={classes.okey}>
+       
+          
+          <img className={classes.img} src={detail.image_2}
+            title={detail.title} />
+       
+        
+       <img className={classes.img} src={detail.image_3}
+            title={detail.title} />
+         
+            
+       <img className={classes.img} src={detail.image_4}
+            title={detail.title} />
+         
+        
+      </div>
+
+          
+
       </Card>
       </div>
 
