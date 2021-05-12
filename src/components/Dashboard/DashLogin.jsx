@@ -1,7 +1,7 @@
 import { useState } from 
 import axios from 'axios'
 
-export default function DashLogin({ isLogin }) {
+export default function DashLogin({ isLogin, setIsLogin }) {
 
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()
@@ -24,6 +24,7 @@ export default function DashLogin({ isLogin }) {
                 console.log(response)
                 if(response) { //data ?
                     setAuthorized(true)
+                    setIsLogin(true)
                 }
 
             } catch(err) {
@@ -37,28 +38,33 @@ export default function DashLogin({ isLogin }) {
 
     }
 
-    return(
-    <form onSubmit={(e) => handleLogin(e)}>
-      <label htmlFor="email">
-        Email :
-        <input
-          type="email"
-          name="email"
-          id="email"
-          value={email}
-          placeholder="mary.poppins@disney.fr"
-          onChange={(e) => handleEmail(e)}
-        />
-      </label>
-      <br />
-      <label htmlFor="password">
-        Name :
-        <input type="password" name="name" id="name" value={password} onChange={(e) => handlePassword(e)}/>
-      </label>
-      <br />
-      <button type="submit" onClick={}>
-        Submit
-      </button>
-    </form>
+    return (
+        
+            !authorized && (
+                
+            <form onSubmit={(e) => handleLogin(e)}>
+            <label htmlFor="email">
+                Email :
+                <input
+                type="email"
+                name="email"
+                id="email"
+                value={email}
+                placeholder="mary.poppins@disney.fr"
+                onChange={(e) => handleEmail(e)}
+                />
+            </label>
+            <br />
+            <label htmlFor="password">
+                Name :
+                <input type="password" name="name" id="name" value={password} onChange={(e) => handlePassword(e)}/>
+            </label>
+            <br />
+            <button type="submit" onClick={}>
+                Submit
+            </button>
+            </form>
+            )
+    
     )
 }
