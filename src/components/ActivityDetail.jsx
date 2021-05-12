@@ -118,7 +118,9 @@ export default function ActivityDetail(){
             Share ! 
           </Button>
         </CardActions>
-        
+        <Button size="small" color="primary">
+            <Link className="link" to="/activities">Back to Activities</Link> 
+        </Button>
          <div className={classes.okey}>
        
           
