@@ -16,6 +16,7 @@
   margin: auto 0;
   cursor: pointer;
   transition: .2s transform, .2s .1s opacity;
+  z-index: 1000;
 
   &:hover{
     transform: scale(1.2);
