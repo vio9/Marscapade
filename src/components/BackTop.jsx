@@ -22,7 +22,7 @@ export default function BackTop() {
   return (
     <>
       <div onClick={scrollTop} className="back-to-top">
-        <KeyboardArrowUpIcon style={{ fontSize: 50 }} />
+        <KeyboardArrowUpIcon style={{ fontSize: "5vh" }} />
       </div>
     </>
   );
