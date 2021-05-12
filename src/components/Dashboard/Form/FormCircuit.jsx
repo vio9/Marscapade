@@ -18,7 +18,7 @@ export default function FormActivity() {
     console.log("circuit");
     const postCircuit = async () => {
       try {
-        const response = await axios.post("http://localhost:8080/circuits", {
+        const response = await axios.post("http://localhost:8081/circuits", {
           title: title,
           description: description,
           image_1: img1,
@@ -144,7 +144,7 @@ export default function FormActivity() {
           />
         </label>
 
-        <button>Submit</button>
+        <input type="submit" value="Submit"></input>
       </form>
     </div>
   );

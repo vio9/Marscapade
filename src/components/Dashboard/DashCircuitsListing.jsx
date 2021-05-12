@@ -11,7 +11,7 @@ export default function DashCircuitListing() {
   useEffect(() => {
     const getCircuitList = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/circuits");
+        const response = await axios.get("http://localhost:8081/circuits");
         console.log("response", response);
         setCircuitList(response.data);
       } catch (err) {
@@ -27,7 +27,7 @@ export default function DashCircuitListing() {
     const deleteCircuit = async () => {
       try {
         const response = await axios.delete(
-          `http://localhost:8080/circuits/${id}`
+          `http://localhost:8081/circuits/${id}`
         );
         setCircuitList(circuitList.filter((circuit) => circuit.id !== id));
       } catch (err) {
