@@ -14,7 +14,7 @@ export default function CircuitDetails () {
         const getCircuitsDetails = async () => {
             try {
                 const circuitsDetails = await axios.get(`http://localhost:8080/circuits/${id}`)
-                setCircuitDetails(circuitsDetails.data)
+                setCircuitDetails(circuitsDetails.data[0])
             } catch(err) {
                 console.log(err)
             } finally {
@@ -34,9 +34,9 @@ export default function CircuitDetails () {
                 <img className="pictureCircuit" src={circuitDetails.image_1} alt={circuitDetails.title}/>
                 <h2 className="titleCircuit">{circuitDetails.title}</h2>
                 <p className="infosCircuit">{circuitDetails.description}</p>
-                <p className="infosCircuit"><i class="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> Distance : {circuitDetails.distance}</p>
-                <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Duration : {circuitDetails.duration}</p>
-                <p className="infosCircuit"><i class="fas fa-rocket" style={{color:"#bd4f35"}}></i> Difficulty level : {circuitDetails.difflevel}</p>
+                <p className="infosCircuit"><i className="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> Distance : {circuitDetails.distance}</p>
+                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Duration : {circuitDetails.duration}</p>
+                <p className="infosCircuit"><i className="fas fa-rocket" style={{color:"#bd4f35"}}></i> Difficulty level : {circuitDetails.difflevel}</p>
         </div>
     )
 }
