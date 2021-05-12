@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams, Link } from 'react-router-dom';
-
-import Exemple from './Exemple.jpg';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -13,12 +11,27 @@ import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
 
+const useStyles = makeStyles({
+  root: {
+    maxWidth: "60%",
+  },
+  media: {
+    height: 500,
+  },
+global: {
+  backgroundColor:'#332d3e',
+ 
+
+}
+  
+});
 
 
 
 export default function ActivityDetail(){
+  const classes = useStyles();
 
-        const [detail, setDetail] =useState([])
+        const [detail, setDetail] =useState()
         const [loading, setLoading] = useState(true)
 
         const {id} = useParams()
@@ -27,67 +40,67 @@ export default function ActivityDetail(){
 
                 const getDetail = async () => {
                     try{
-                        const detailData = await axios.get('http://localhost:8080/activities/id')
-                        setDetail(detailData.data)
+                        const detailData = await axios.get(`http://localhost:8080/activities/${id}`)
+                        setDetail(detailData.data[0])
                     } catch(err) {
                         console.log(err)
                     } finally {
-                        setloading(false)
+                        setLoading(false)
                     }
                 }
                 getDetail()
             }, [id])
+
+            console.log("detail", detail)
             if(loading) return <div>loading...</div>
 
     return(
-       <>
+      <div className={classes.global}>
+       
         <Card className={classes.root}>
         <CardActionArea>
           <CardMedia
             className={classes.media}
-            image={/*detail.image*/}
-            title="Contemplative Reptile"
+            image={detail.image_1}
+            title={detail.title}
           />
+
           <CardContent>
-            <Typography gutterBottom variant="h5" component="h2">
-              Title demo {/*{detail.name}*/}
+            <Typography variant="h5" component="h2">
+             {detail.title}
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              LLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-               industry's standard dummy text ever since th
-              e 1500s, when an unknown printer took a galley of type and scrambled it to make a type s
-              pecimen book. It{/*detail.description*/}
+              {detail.description}
             </Typography>
           </CardContent>
         </CardActionArea>
         <CardActions>
         <Typography variant="overline">
-           Prix :{/*{price}*/} euros
+           Prix :{detail.price} euros
            </Typography>
   
            <Typography variant="overline">
-           Durée : {/*{detail.duration}*/}
+           Durée : {detail.duration}
            </Typography>
   
            <Typography variant="overline">
-           location: {/*{location}*/}
+           location: {detail.location}
            </Typography>
 
            <Typography variant="overline">
-          Difficulté : {/*{difflevel}*/}
+          Difficulté : {detail.difflevel}
            </Typography>
 
            <Typography variant="overline">
-          Nombre de participants : {/*{nbpax}*/}
+          Nombre de participants : {detail.nbpax}
            </Typography>
 
           <Button size="small" color="primary">
-            Share ! {/**links réseaux?*/}
+            Share ! 
           </Button>
         </CardActions>
       </Card>
-      <ImageList />
-</>
+      </div>
 
 
     )
