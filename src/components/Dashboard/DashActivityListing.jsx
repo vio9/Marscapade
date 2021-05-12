@@ -11,7 +11,7 @@ export default function DashActivityListing() {
   useEffect(() => {
     const getActivityList = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/activities");
+        const response = await axios.get("http://localhost:8081/activities");
         console.log("response", response);
         setActivityList(response.data);
       } catch (err) {
@@ -27,7 +27,7 @@ export default function DashActivityListing() {
     const deleteCircuit = async () => {
       try {
         const response = await axios.delete(
-          `http://localhost:8080/activities/${id}`
+          `http://localhost:8081/activities/${id}`
         );
         setActivityList(activityList.filter((activity) => activity.id !== id));
       } catch (err) {
