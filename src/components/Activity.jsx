@@ -34,10 +34,10 @@ export default function Activity({name, image_1, description, price, duration, l
     <div className="cardCircuit">
                 <img className="pictureCircuit" src={image_1} alt={name}/>
                 <h2 className="titleCircuit">{name}</h2>
-                <p className="infosCircuit"><i class="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> price : {price}</p>
-                <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Description : {description}</p>
-                <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i>duration : {duration}</p>
-                <p className="infosCircuit"><i class="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> location : {location}</p>
+                <p className="infosCircuit"><i className="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> price : {price}</p>
+                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Description : {description}</p>
+                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i>duration : {duration}</p>
+                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> location : {location}</p>
          
                 <Link to={`/activities/${id}`} className="seeMoreCircuit">Voir plus</Link>
         </div>
