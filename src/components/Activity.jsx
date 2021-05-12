@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 /*import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -7,9 +7,8 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';*/
-import {Link} from 'react-router-dom';
-import './Circuits/Circuits.scss';
-
+import { Link } from "react-router-dom";
+import "./Circuits/Circuits.scss";
 
 /*
 const useStyles = makeStyles({
@@ -27,22 +26,49 @@ const useStyles = makeStyles({
   
 });*/
 
-export default function Activity({name, image_1, description, price, duration, location, id} ) {
-
-
+export default function Activity({
+  name,
+  image_1,
+  description,
+  price,
+  duration,
+  location,
+  id,
+}) {
   return (
     <div className="cardCircuit">
-                <img className="pictureCircuit" src={image_1} alt={name}/>
-                <h2 className="titleCircuit">{name}</h2>
-                <p className="infosCircuit"><i className="fas fa-user-astronaut" style={{color:"#bd4f35"}}></i> price : {price}</p>
-                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> Description : {description}</p>
-                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i>duration : {duration}</p>
-                <p className="infosCircuit"><i className="fas fa-stopwatch" style={{color:"#bd4f35"}}></i> location : {location}</p>
-         
-                <Link to={`/activities/${id}`} className="seeMoreCircuit">Voir plus</Link>
+      <img className="pictureCircuit" src={image_1} alt={name} />
+      <div className="circuit-detail">
+        <h2 className="titleCircuit">{name}</h2>
+        <div className="circuit-info">
+          <p className="infosCircuit">
+            <i
+              className="fas fa-user-astronaut"
+              style={{ color: "#bd4f35" }}
+            ></i>{" "}
+            price : {price}
+          </p>
+          <p className="infosCircuit">
+            <i className="fas fa-stopwatch" style={{ color: "#bd4f35" }}></i>{" "}
+            Description : {description}
+          </p>
+          <p className="infosCircuit">
+            <i className="fas fa-stopwatch" style={{ color: "#bd4f35" }}></i>
+            duration : {duration}
+          </p>
+          <p className="infosCircuit">
+            <i className="fas fa-stopwatch" style={{ color: "#bd4f35" }}></i>{" "}
+            location : {location}
+          </p>
         </div>
 
-/*
+        <Link to={`/activities/${id}`} className="seeMoreCircuit">
+          Voir plus
+        </Link>
+      </div>
+    </div>
+
+    /*
 
 
     <div className={classes.globals}>
@@ -77,6 +103,3 @@ export default function Activity({name, image_1, description, price, duration, l
     </div> !*/
   );
 }
-
-
-
