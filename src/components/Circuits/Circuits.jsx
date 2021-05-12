@@ -12,7 +12,7 @@ export default function Circuits() {
   useEffect(() => {
     const getCircuitsList = async () => {
       try {
-        const circuitsList = await axios.get("http://localhost:8080/circuits");
+        const circuitsList = await axios.get("http://localhost:8081/circuits");
         setCircuitsList(circuitsList.data);
       } catch (err) {
         console.log(err);
