@@ -51,8 +51,12 @@
 }
 
 @media screen and (min-width: 720px) and (max-width: 1079.95px) {
+  .navbar{
+    height: 3rem;
+  }
+
   .header {
-    background-size: 100% 100%;
+    background-size: 100% 100%; 
 
     .separator{
       width: 15rem;
@@ -71,6 +75,10 @@
   #title1, #title2 {
     font-size: 9rem;
   }
+  .navbar{
+    height: 4rem;
+  }
+
   .header
   {
     .separator{
