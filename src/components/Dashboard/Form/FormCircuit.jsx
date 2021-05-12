@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 import "./Form.scss";
 
 export default function FormActivity() {
@@ -15,27 +15,25 @@ export default function FormActivity() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('circuit')
+    console.log("circuit");
     const postCircuit = async () => {
-      try{
-          const response = await axios.post('http://localhost:8080/circuits', {
-            title: title,
-            description: description,
-            image_1: img1,
-            image_2: img2,
-            image_3: img3,
-            image_4: img4,
-            distance: distance,
-            duration: duration,
-            difflevel: difflevel
-          })
-      } catch(err) {
-          console.log(err)
+      try {
+        const response = await axios.post("http://localhost:8080/circuits", {
+          title: title,
+          description: description,
+          image_1: img1,
+          image_2: img2,
+          image_3: img3,
+          image_4: img4,
+          distance: distance,
+          duration: duration,
+          difflevel: difflevel,
+        });
+      } catch (err) {
+        console.log(err);
       }
-      
-  }
-  postCircuit()
-
+    };
+    postCircuit();
   };
 
   return (
@@ -145,7 +143,6 @@ export default function FormActivity() {
             required
           />
         </label>
-
 
         <button>Submit</button>
       </form>
