@@ -12,6 +12,7 @@ import { Button } from "@material-ui/core";
 import tour1 from "./components/images/tour1.png";
 import tour2 from "./components/images/tour2.png";
 import tour3 from "./components/images/tour3.png";
+import tour4 from "./components/images/tour4.png";
 
 const homeTour = (
   <div className="homeTour">
@@ -55,6 +56,15 @@ const activitiesTour = (
   </div>
 );
 
+const dashboardTour = <div className="dashboardTour">
+    <img className="dashboardTour-image" src={tour4}/>
+    <div className="dashboardTour-content">
+        <div className="dashboardTour-title">Discover our beautiful dashboard</div>
+        <p>If you're an admin, you can find here the way to update circuits and activities for your guests.</p>
+
+    </div>
+</div>;
+
 const steps = [
   {
     selector: "#home",
@@ -67,6 +77,10 @@ const steps = [
   {
     selector: "#activities",
     content: activitiesTour,
+  },
+    {
+    selector: "#dashboard",
+    content: dashboardTour,
   },
 ];
 
