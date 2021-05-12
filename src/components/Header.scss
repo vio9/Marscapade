@@ -53,22 +53,30 @@
 @media screen and (min-width: 720px) and (max-width: 1079.95px) {
   .header {
     background-size: 100% 100%;
+
+    .separator{
+      width: 15rem;
+      height: .2rem;
+      margin: 0 15rem 0 0 ;
+    }
   }
   
   #title1, #title2 {
     font-size: 5rem;
   }
 
-  .separator{
-    width: 15rem;
-    height: .3rem;
-    margin: 0 15rem 0 0 ;
-    background-color: white;
-  }
 }
 
 @media screen and (min-width: 1080px) and (max-width: 1199.95px) {
   #title1, #title2 {
     font-size: 9rem;
+  }
+  .header
+  {
+    .separator{
+      width: 27rem;
+      height: .2rem;
+      margin: 0 27rem 0 0 ;
+    }
   }
 }
