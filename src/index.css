@@ -13,5 +13,5 @@ body {
   font-family: "Old Standard TT", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark);
 }
-
