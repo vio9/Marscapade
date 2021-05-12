@@ -17,7 +17,7 @@ export default function ActivityList(){
     useEffect(() => {
         const getActivityList = async () => {
             try{
-                const response = await axios.get('http://localhost:8080/activities')
+                const response = await axios.get('http://localhost:8081/activities')
                 console.log('response', response)
                 setActivityList(response.data)
             } catch(err) {
