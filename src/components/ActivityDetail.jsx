@@ -35,7 +35,7 @@ okey: {
   
 img: {
   height:200,
-  width:"70%",
+  width:250,
   '&:hover': {
    filter:"saturate(200%)",
    transition:"0.4s",
