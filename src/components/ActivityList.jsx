@@ -44,7 +44,7 @@ export default function ActivityList(){
                 return(   
                     <Activity
                     id={act.id}
-                    title={act.title}
+                    name={act.name}
                     image_1={act.image_1}
                     description={act.description} 
                     price={'10euros'}
