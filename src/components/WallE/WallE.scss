@@ -1,0 +1,80 @@
+.wall-e{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 2rem;
+    bottom: 2rem;
+    text-decoration: none;
+    color: black;
+
+    img{
+        width: 7rem;
+        animation: coucou  1s,  wave  .7s .75s 
+    }
+
+    p{
+        background-color: white;
+        padding: 1rem;
+        border-radius: 10px;
+        font-size: 1rem;
+        margin: 0;
+        opacity: 0;
+        animation: bulle .5s 1.5s forwards;
+    }
+
+    span{
+        height: .7rem;
+        width: 1rem;
+        background-color: white;
+        padding: 0rem;
+        margin: 0 1rem -.2rem 1rem;
+        border-radius: 0% 0% 50% 50% / 0% 0% 100% 100% ;
+        opacity: 0;
+        animation: bulle .5s 1.5s forwards;
+    }
+}
+
+@keyframes coucou {
+    0% {
+        transform: translateX(+100%);
+
+    }
+    100% {
+        transform: translateX(0);
+
+    }
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0);
+    }
+    25%{
+        transform: rotate(-15deg);
+
+    }
+    50%{
+        transform: rotate(0);
+
+    }
+    75%{
+        transform: rotate(-15deg);
+
+    }
+    100% {
+        transform: rotate(-00deg);
+    }
+}
+
+@keyframes bulle {
+    from{
+        opacity: 0;
+        transform: translatey(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translatey(0);
+    }
+    
+}
