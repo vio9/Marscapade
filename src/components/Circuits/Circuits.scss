@@ -1,5 +1,8 @@
 .allCircuitsElements {
     background-color: #332d3e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .titleContainer {
@@ -14,30 +17,84 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 110rem;
 }
 
 .cardCircuit {
-    margin: 1%;
-    padding-bottom: 1%;
-    width: 25%;
-    height: 30%;
+    margin: 1rem;
+    width: 25rem;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: #e7bf7a;
+    box-shadow: 3px 3px 15px 1px rgba($color: #000000, $alpha: .5);
+
+    a{
+        text-align: center;
+        background-color: var(--orange);
+        color: white;
+        font-size: 1rem;
+        padding: .5rem 0;
+    }
 }
 
 .pictureCircuit {
     width: 100%;
 }
 
+.circuit-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%;
+    margin-left: 1rem;
+}
+
 .titleCircuit {
     font-size: 2rem;
     font-family: 'Orbitron', sans-serif;
+    background-color: var(--red);
+    width: 100%;
+    margin: 0 0 1rem 0;
+    padding: 1rem 0;
+    border-top: solid 5px ;
+    color: white;
+    text-align: center;
+}
+
+.circuit-detail{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .infosCircuit {
     font-size: 1rem;
     margin: 1%;
 
+}
+
+@media screen and (max-width: 439.95px) {
+  
+}
+
+@media screen and (max-width: 719.95px) {
+    .cardCircuit {
+        width: 15rem;
+    }
+    .titleContainer {
+        font-size: 1rem;
+    }
+ 
+}
+
+@media screen and (min-width: 720px) and (max-width: 1079.95px) {
+    .cardCircuit {
+        width: 20rem;
+    }
+    .titleContainer {
+        font-size: 1.5rem;
+    }
 }
