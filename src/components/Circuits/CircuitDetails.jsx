@@ -56,7 +56,7 @@ export default function CircuitDetails () {
     useEffect(() => {
         const getCircuitsDetails = async () => {
             try {
-                const circuitsDetails = await axios.get(`http://localhost:8080/circuits/${id}`)
+                const circuitsDetails = await axios.get(`http://localhost:8081/circuits/${id}`)
                 setCircuitDetails(circuitsDetails.data[0])
             } catch(err) {
                 console.log(err)

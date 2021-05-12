@@ -53,7 +53,7 @@ export default function ActivityDetail() {
     const getDetail = async () => {
       try {
         const detailData = await axios.get(
-          `http://localhost:8080/activities/${id}`
+          `http://localhost:8081/activities/${id}`
         );
         setDetail(detailData.data[0]);
       } catch (err) {
@@ -109,22 +109,6 @@ export default function ActivityDetail() {
         <Button size="small" color="primary">
             <Link className="link" to="/activities">Back to Activities</Link> 
         </Button>
-         /*<div className={classes.okey}>
-       
-          
-          <img className={classes.img} src={detail.image_2}
-            title={detail.title} />
-       
-        
-       <img className={classes.img} src={detail.image_3}
-            title={detail.title} />
-         
-            
-       <img className={classes.img} src={detail.image_4}
-            title={detail.title} />
-         
-        
-      </div>*/
 
         <div className={classes.okey}>
           <img
